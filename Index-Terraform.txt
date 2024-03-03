@@ -1,1 +1,40 @@
- 
+ IAC Tools
+ List of  IAC Tools
+ why  Terraform ?
+ Provider vs Resource
+
+terrform files
+    terraform.tfstate
+    ./terraform
+    .terraform.lock.hcl
+    terraform.tfvars
+
+variables types(string, bool, number, list, set, map, tuple, object)
+
+Resource Dependency 
+    1. Implicit (local_file.my-file)
+    2. Explicit (depends_on)
+
+Resource Lifecycle rules
+    1. create_before_destory = True
+    2. prevent_destory  = True
+    3. ignore_changes = True
+
+Meta Arguments
+    1. depends_on
+    2. Lifecycle rules
+    3. count
+    4. for_each
+
+Functions 
+    1. element
+
+privider version
+    <, >, !, !=, >=, <=, ~, 
+
+
+
+
+
+
+
