@@ -1,6 +1,6 @@
+# using "local" provider to create a local file
 
-# We are using "local" provider and creating a local testfile using "local_file" resouce.
-
+# create a test-file using the resouce "local_file"
 resource "local_file" "test-file" {
   filename = "/tmp/test-file.txt"
   content  = "This is a test file created "

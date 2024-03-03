@@ -11,3 +11,10 @@ resource "local_file" "pet_files" {
   filename = "/tmp/${random_pet.my_pets.*.id[count.index]}.txt"
   content  = random_pet.my_pets.*.id[count.index]
 }
+
+output "pet-name3" {
+  value = random_pet.my_pets.*.id[3]
+}
+output "pet-name-all" {
+  value = random_pet.my_pets.*.id[*]
+}

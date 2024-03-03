@@ -1,5 +1,6 @@
 # provider random with other useful resouces types
 
+# Generate random password using the "random_password" 
 resource "random_password" "password" {
   length = 16
 }

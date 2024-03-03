@@ -1,5 +1,6 @@
-# creating a random pet using "random" provider and passing pet details into a file. 
+# Generate random pets & create files with petnames
 
+# creating a random pet using "random" provider and passing pet details into a file. 
 resource "random_pet" "my-pet" {}
 
 resource "local_file" "my-pet-details" {

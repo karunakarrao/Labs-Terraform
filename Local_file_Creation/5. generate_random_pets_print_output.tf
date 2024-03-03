@@ -1,5 +1,4 @@
 # Generate  multipule random pets print as output
-provider "random" {}
 
 # Note: The "count" object can only be used in "module", "resource", and "data" blocks, and only when the "count" argument is set.
 resource "random_pet" "pet" {
