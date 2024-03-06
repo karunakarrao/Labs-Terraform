@@ -24,7 +24,7 @@ Meta Arguments
     1. depends_on
     2. Lifecycle rules
     3. count - The "count" object can only be used in "module", "resource", and "data" blocks, and only when the "count" argument is set.
-    4. for_each - 
+    4. for_each - the "for_each" argument must be a map, or set of strings, and you have provided a value of type List, to convert use toset() function
 
 Functions 
     1. element
