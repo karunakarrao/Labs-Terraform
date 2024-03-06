@@ -11,6 +11,14 @@ variable "docker_ami" {
 resource "aws_instance" "docker" {
   ami           = var.docker_ami["ami"]
   instance_type = var.docker_ami["instance_type"]
-  tags = { Name = "Docker_Host" }
+  tags          = { Name = "Docker_Host" }
+
+  user_data = <<-EOF
+    #!/bin/bash
+    sudo apt update -y
+    sudo apt install -y docker
+    sudo systemctl start docker
+    sudo systemctl enable docker
+  EOF
 }
 
